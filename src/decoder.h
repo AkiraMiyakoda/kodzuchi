@@ -1,0 +1,29 @@
+// Copyright Akira Miyakoda 2022.
+// Distributed under the Boost Software License, Version 1.0.
+// See accompanying file LICENSE
+// or copy at http://www.boost.org/LICENSE_1_0.txt
+
+#ifndef KOD_09E84067_50E8_42EF_A59D_36E4363232AE
+#define KOD_09E84067_50E8_42EF_A59D_36E4363232AE
+
+#include <boost/noncopyable.hpp>
+#include <kodzuchi.h>
+
+typedef struct KOD_DECODER_ {} KOD_DECODER;
+
+namespace kodzuchi
+{
+    class decoder :
+        public KOD_DECODER_,
+        private boost::noncopyable
+    {
+    public:
+        decoder(KOD_ENCODING) {}
+        virtual ~decoder() = default;
+
+        KOD_ERROR decode(const char *) { return KOD_SUCCESS; }
+        const char *get_result() const { return "Not yet implemented"; }
+    };
+}
+
+#endif // KOD_09E84067_50E8_42EF_A59D_36E4363232AE
