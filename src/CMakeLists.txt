@@ -5,6 +5,7 @@
 
 set(KODZUCHI_SRC
     kodzuchi.cpp
+    singlebyte.cpp
 )
 
 add_library(kodzuchi ${KODZUCHI_SRC})

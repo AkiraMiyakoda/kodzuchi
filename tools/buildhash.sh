@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+
+./buildhash_singlebyte.py < ../encodings/index-ibm866.txt         > ../src/tables/singlebyte/ibm866.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-10.txt    > ../src/tables/singlebyte/iso_8859_10.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-13.txt    > ../src/tables/singlebyte/iso_8859_13.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-14.txt    > ../src/tables/singlebyte/iso_8859_14.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-15.txt    > ../src/tables/singlebyte/iso_8859_15.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-16.txt    > ../src/tables/singlebyte/iso_8859_16.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-2.txt     > ../src/tables/singlebyte/iso_8859_2.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-3.txt     > ../src/tables/singlebyte/iso_8859_3.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-4.txt     > ../src/tables/singlebyte/iso_8859_4.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-5.txt     > ../src/tables/singlebyte/iso_8859_5.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-6.txt     > ../src/tables/singlebyte/iso_8859_6.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-7.txt     > ../src/tables/singlebyte/iso_8859_7.h
+./buildhash_singlebyte.py < ../encodings/index-iso-8859-8.txt     > ../src/tables/singlebyte/iso_8859_8.h
+./buildhash_singlebyte.py < ../encodings/index-koi8-r.txt         > ../src/tables/singlebyte/koi8_r.h
+./buildhash_singlebyte.py < ../encodings/index-koi8-u.txt         > ../src/tables/singlebyte/koi8_u.h
+./buildhash_singlebyte.py < ../encodings/index-macintosh.txt      > ../src/tables/singlebyte/macintosh.h
+./buildhash_singlebyte.py < ../encodings/index-windows-1250.txt   > ../src/tables/singlebyte/windows_1250.h
+./buildhash_singlebyte.py < ../encodings/index-windows-1251.txt   > ../src/tables/singlebyte/windows_1251.h
+./buildhash_singlebyte.py < ../encodings/index-windows-1252.txt   > ../src/tables/singlebyte/windows_1252.h
+./buildhash_singlebyte.py < ../encodings/index-windows-1253.txt   > ../src/tables/singlebyte/windows_1253.h
+./buildhash_singlebyte.py < ../encodings/index-windows-1254.txt   > ../src/tables/singlebyte/windows_1254.h
+./buildhash_singlebyte.py < ../encodings/index-windows-1255.txt   > ../src/tables/singlebyte/windows_1255.h
+./buildhash_singlebyte.py < ../encodings/index-windows-1256.txt   > ../src/tables/singlebyte/windows_1256.h
+./buildhash_singlebyte.py < ../encodings/index-windows-1257.txt   > ../src/tables/singlebyte/windows_1257.h
+./buildhash_singlebyte.py < ../encodings/index-windows-1258.txt   > ../src/tables/singlebyte/windows_1258.h
+./buildhash_singlebyte.py < ../encodings/index-windows-874.txt    > ../src/tables/singlebyte/windows_874.h
+./buildhash_singlebyte.py < ../encodings/index-x-mac-cyrillic.txt > ../src/tables/singlebyte/x_mac_cyrillic.h
