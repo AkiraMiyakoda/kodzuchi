@@ -26,5 +26,4 @@ namespace kodzuchi::singlebyte
     };
 }
 
-
 #endif // KOD_16B855FB_1933_4E3D_8AAC_7F30D9DBCD50

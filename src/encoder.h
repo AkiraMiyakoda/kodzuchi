@@ -6,6 +6,7 @@
 #ifndef KOD_2FB4628F_2F4C_4416_843B_BB465D58C45E
 #define KOD_2FB4628F_2F4C_4416_843B_BB465D58C45E
 
+#include <string_view>
 #include <boost/noncopyable.hpp>
 #include <kodzuchi.h>
 
@@ -18,11 +19,11 @@ namespace kodzuchi
         private boost::noncopyable
     {
     public:
-        encoder(KOD_ENCODING) {}
-        virtual ~encoder() = default;
+        encoder() = default;
+        virtual ~encoder() = 0;
 
-        KOD_ERROR encode(const char *, char) { return KOD_SUCCESS; }
-        const char *get_result() const { return "Not yet implemented"; }
+        virtual KOD_ERROR encode(std::string_view, char) = 0;
+        virtual const char *get_result() const = 0;
     };
 }
 
