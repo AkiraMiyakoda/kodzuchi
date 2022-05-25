@@ -3,12 +3,17 @@
 // See accompanying file LICENSE
 // or copy at http://www.boost.org/LICENSE_1_0.txt
 
-#include "decoder.h"
+#include "singlebyte_decoder.h"
 #include "encoder.h"
 
 KOD_DECODER *kod_decoder_create(KOD_ENCODING encoding)
 {
-    return new kodzuchi::decoder(encoding);
+    if (encoding >= KOD_IBM866 && encoding <= KOD_X_MAC_CYRILLIC) {
+        return new kodzuchi::singlebyte::decoder(encoding);
+    }
+    else {
+        return nullptr;
+    }
 }
 
 void kod_decoder_destroy(KOD_DECODER *decoder)

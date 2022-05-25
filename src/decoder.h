@@ -6,6 +6,7 @@
 #ifndef KOD_09E84067_50E8_42EF_A59D_36E4363232AE
 #define KOD_09E84067_50E8_42EF_A59D_36E4363232AE
 
+#include <string_view>
 #include <boost/noncopyable.hpp>
 #include <kodzuchi.h>
 
@@ -18,11 +19,11 @@ namespace kodzuchi
         private boost::noncopyable
     {
     public:
-        decoder(KOD_ENCODING) {}
-        virtual ~decoder() = default;
+        decoder() = default;
+        virtual ~decoder() = 0;
 
-        KOD_ERROR decode(const char *) { return KOD_SUCCESS; }
-        const char *get_result() const { return "Not yet implemented"; }
+        virtual KOD_ERROR decode(std::string_view string) = 0;
+        virtual const char *get_result() const = 0;
     };
 }
 
