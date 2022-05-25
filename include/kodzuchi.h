@@ -57,7 +57,7 @@ const char  *kod_decoder_get_result(KOD_DECODER *decoder);
 
 KOD_ENCODER *kod_encoder_create(KOD_ENCODING encoding);
 void         kod_encoder_destroy(KOD_ENCODER *encoder);
-KOD_ERROR    kod_encoder_encode(KOD_ENCODER *encoder, const char *string);
+KOD_ERROR    kod_encoder_encode(KOD_ENCODER *encoder, const char *string, char default_char);
 const char  *kod_encoder_get_result(KOD_ENCODER *encoder);
 
 #ifdef __cplusplus

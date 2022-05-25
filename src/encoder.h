@@ -21,7 +21,7 @@ namespace kodzuchi
         encoder(KOD_ENCODING) {}
         virtual ~encoder() = default;
 
-        KOD_ERROR encode(const char *) { return KOD_SUCCESS; }
+        KOD_ERROR encode(const char *, char) { return KOD_SUCCESS; }
         const char *get_result() const { return "Not yet implemented"; }
     };
 }

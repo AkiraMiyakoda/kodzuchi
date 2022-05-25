@@ -36,9 +36,9 @@ void kod_encoder_destroy(KOD_ENCODER *encoder)
     delete static_cast<kodzuchi::encoder *>(encoder);
 }
 
-KOD_ERROR kod_encoder_decode(KOD_ENCODER *encoder, const char *string)
+KOD_ERROR kod_encoder_decode(KOD_ENCODER *encoder, const char *string, char default_char)
 {
-    return static_cast<kodzuchi::encoder *>(encoder)->encode(string);
+    return static_cast<kodzuchi::encoder *>(encoder)->encode(string, default_char);
 }
 
 const char *kod_encoder_get_result(KOD_ENCODER *encoder)
